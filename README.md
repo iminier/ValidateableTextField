@@ -1,14 +1,11 @@
 ## Synopsis
 
-UITexfield subclass that implements data validation. Using the strategy pattern you can have a phone validator or an email validator for now. 
-
-## Code Example
-
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+UITexfield subclass written in Swift that implements data validation. For now you can have a phone validator or an email validator. Using the strategy pattern
+you can choose the type of validation you need.
 
 ## Motivation
 
-I created this as a tool to save me time and reuse code with data validation in my projects. I decided to share it with anyone who thinks can use it.
+I created this as a tool to save me time, keep lean controllers and avoid code duplication when I need data validation in my projects. 
 
 ## Installation
 
@@ -36,11 +33,15 @@ I created this as a tool to save me time and reuse code with data validation in 
 
 - Validate in textFieldShouldEndEditing.
 ```swift
+func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+
         if textField == emailTextField {
             if !emailTextField.isValidInput() {
+                // if input is not valid handle that case here. In this case we alert the user.
                 invalidEmailAlert(email: emailTextField.text)
             }
         }
+}
 ```
 
 - Or anywhere else you need. Like before dismissing the view controller.
