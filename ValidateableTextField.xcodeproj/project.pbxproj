@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D39BD21E1EA4805E00131B46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39BD21D1EA4805E00131B46 /* AppDelegate.swift */; };
+		D39BD2201EA4805E00131B46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39BD21F1EA4805E00131B46 /* ViewController.swift */; };
+		D39BD2231EA4805E00131B46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39BD2211EA4805E00131B46 /* Main.storyboard */; };
+		D39BD2251EA4805E00131B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D39BD2241EA4805E00131B46 /* Assets.xcassets */; };
+		D39BD2281EA4805E00131B46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39BD2261EA4805E00131B46 /* LaunchScreen.storyboard */; };
+		D39BD2331EA4805E00131B46 /* ValidateableTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39BD2321EA4805E00131B46 /* ValidateableTextFieldTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D39BD22F1EA4805E00131B46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D39BD2121EA4805E00131B46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D39BD2191EA4805E00131B46;
+			remoteInfo = ValidateableTextField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D39BD21A1EA4805E00131B46 /* ValidateableTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ValidateableTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D39BD21D1EA4805E00131B46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D39BD21F1EA4805E00131B46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D39BD2221EA4805E00131B46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D39BD2241EA4805E00131B46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D39BD2271EA4805E00131B46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D39BD2291EA4805E00131B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D39BD22E1EA4805E00131B46 /* ValidateableTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidateableTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D39BD2321EA4805E00131B46 /* ValidateableTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateableTextFieldTests.swift; sourceTree = "<group>"; };
+		D39BD2341EA4805E00131B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D39BD2171EA4805E00131B46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D39BD22B1EA4805E00131B46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D39BD2111EA4805E00131B46 = {
+			isa = PBXGroup;
+			children = (
+				D39BD21C1EA4805E00131B46 /* ValidateableTextField */,
+				D39BD2311EA4805E00131B46 /* ValidateableTextFieldTests */,
+				D39BD21B1EA4805E00131B46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D39BD21B1EA4805E00131B46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D39BD21A1EA4805E00131B46 /* ValidateableTextField.app */,
+				D39BD22E1EA4805E00131B46 /* ValidateableTextFieldTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D39BD21C1EA4805E00131B46 /* ValidateableTextField */ = {
+			isa = PBXGroup;
+			children = (
+				D39BD21D1EA4805E00131B46 /* AppDelegate.swift */,
+				D39BD21F1EA4805E00131B46 /* ViewController.swift */,
+				D39BD2211EA4805E00131B46 /* Main.storyboard */,
+				D39BD2241EA4805E00131B46 /* Assets.xcassets */,
+				D39BD2261EA4805E00131B46 /* LaunchScreen.storyboard */,
+				D39BD2291EA4805E00131B46 /* Info.plist */,
+			);
+			path = ValidateableTextField;
+			sourceTree = "<group>";
+		};
+		D39BD2311EA4805E00131B46 /* ValidateableTextFieldTests */ = {
+			isa = PBXGroup;
+			children = (
+				D39BD2321EA4805E00131B46 /* ValidateableTextFieldTests.swift */,
+				D39BD2341EA4805E00131B46 /* Info.plist */,
+			);
+			path = ValidateableTextFieldTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D39BD2191EA4805E00131B46 /* ValidateableTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D39BD2371EA4805E00131B46 /* Build configuration list for PBXNativeTarget "ValidateableTextField" */;
+			buildPhases = (
+				D39BD2161EA4805E00131B46 /* Sources */,
+				D39BD2171EA4805E00131B46 /* Frameworks */,
+				D39BD2181EA4805E00131B46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ValidateableTextField;
+			productName = ValidateableTextField;
+			productReference = D39BD21A1EA4805E00131B46 /* ValidateableTextField.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D39BD22D1EA4805E00131B46 /* ValidateableTextFieldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D39BD23A1EA4805E00131B46 /* Build configuration list for PBXNativeTarget "ValidateableTextFieldTests" */;
+			buildPhases = (
+				D39BD22A1EA4805E00131B46 /* Sources */,
+				D39BD22B1EA4805E00131B46 /* Frameworks */,
+				D39BD22C1EA4805E00131B46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D39BD2301EA4805E00131B46 /* PBXTargetDependency */,
+			);
+			name = ValidateableTextFieldTests;
+			productName = ValidateableTextFieldTests;
+			productReference = D39BD22E1EA4805E00131B46 /* ValidateableTextFieldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D39BD2121EA4805E00131B46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Alberto Vega Gonzalez";
+				TargetAttributes = {
+					D39BD2191EA4805E00131B46 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = H53W5ARJ67;
+						ProvisioningStyle = Automatic;
+					};
+					D39BD22D1EA4805E00131B46 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = H53W5ARJ67;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D39BD2191EA4805E00131B46;
+					};
+				};
+			};
+			buildConfigurationList = D39BD2151EA4805E00131B46 /* Build configuration list for PBXProject "ValidateableTextField" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D39BD2111EA4805E00131B46;
+			productRefGroup = D39BD21B1EA4805E00131B46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D39BD2191EA4805E00131B46 /* ValidateableTextField */,
+				D39BD22D1EA4805E00131B46 /* ValidateableTextFieldTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D39BD2181EA4805E00131B46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D39BD2281EA4805E00131B46 /* LaunchScreen.storyboard in Resources */,
+				D39BD2251EA4805E00131B46 /* Assets.xcassets in Resources */,
+				D39BD2231EA4805E00131B46 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D39BD22C1EA4805E00131B46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D39BD2161EA4805E00131B46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D39BD2201EA4805E00131B46 /* ViewController.swift in Sources */,
+				D39BD21E1EA4805E00131B46 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D39BD22A1EA4805E00131B46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D39BD2331EA4805E00131B46 /* ValidateableTextFieldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D39BD2301EA4805E00131B46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D39BD2191EA4805E00131B46 /* ValidateableTextField */;
+			targetProxy = D39BD22F1EA4805E00131B46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D39BD2211EA4805E00131B46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D39BD2221EA4805E00131B46 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D39BD2261EA4805E00131B46 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D39BD2271EA4805E00131B46 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D39BD2351EA4805E00131B46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D39BD2361EA4805E00131B46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D39BD2381EA4805E00131B46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H53W5ARJ67;
+				INFOPLIST_FILE = ValidateableTextField/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlbertoVega.ValidateableTextField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D39BD2391EA4805E00131B46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = H53W5ARJ67;
+				INFOPLIST_FILE = ValidateableTextField/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlbertoVega.ValidateableTextField;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D39BD23B1EA4805E00131B46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = H53W5ARJ67;
+				INFOPLIST_FILE = ValidateableTextFieldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlbertoVega.ValidateableTextFieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ValidateableTextField.app/ValidateableTextField";
+			};
+			name = Debug;
+		};
+		D39BD23C1EA4805E00131B46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = H53W5ARJ67;
+				INFOPLIST_FILE = ValidateableTextFieldTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlbertoVega.ValidateableTextFieldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ValidateableTextField.app/ValidateableTextField";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D39BD2151EA4805E00131B46 /* Build configuration list for PBXProject "ValidateableTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D39BD2351EA4805E00131B46 /* Debug */,
+				D39BD2361EA4805E00131B46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D39BD2371EA4805E00131B46 /* Build configuration list for PBXNativeTarget "ValidateableTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D39BD2381EA4805E00131B46 /* Debug */,
+				D39BD2391EA4805E00131B46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D39BD23A1EA4805E00131B46 /* Build configuration list for PBXNativeTarget "ValidateableTextFieldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D39BD23B1EA4805E00131B46 /* Debug */,
+				D39BD23C1EA4805E00131B46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D39BD2121EA4805E00131B46 /* Project object */;
+}
