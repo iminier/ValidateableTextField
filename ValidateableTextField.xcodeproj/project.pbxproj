@@ -13,6 +13,10 @@
 		D39BD2251EA4805E00131B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D39BD2241EA4805E00131B46 /* Assets.xcassets */; };
 		D39BD2281EA4805E00131B46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39BD2261EA4805E00131B46 /* LaunchScreen.storyboard */; };
 		D39BD2331EA4805E00131B46 /* ValidateableTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39BD2321EA4805E00131B46 /* ValidateableTextFieldTests.swift */; };
+		D39BD2411EA480F400131B46 /* PhoneValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39BD23D1EA480F400131B46 /* PhoneValidator.swift */; };
+		D39BD2421EA480F400131B46 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39BD23E1EA480F400131B46 /* EmailValidator.swift */; };
+		D39BD2431EA480F400131B46 /* Validateable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39BD23F1EA480F400131B46 /* Validateable.swift */; };
+		D39BD2441EA480F400131B46 /* ValidateableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39BD2401EA480F400131B46 /* ValidateableTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		D39BD22E1EA4805E00131B46 /* ValidateableTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidateableTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39BD2321EA4805E00131B46 /* ValidateableTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateableTextFieldTests.swift; sourceTree = "<group>"; };
 		D39BD2341EA4805E00131B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D39BD23D1EA480F400131B46 /* PhoneValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneValidator.swift; sourceTree = "<group>"; };
+		D39BD23E1EA480F400131B46 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		D39BD23F1EA480F400131B46 /* Validateable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validateable.swift; sourceTree = "<group>"; };
+		D39BD2401EA480F400131B46 /* ValidateableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateableTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,10 @@
 		D39BD21C1EA4805E00131B46 /* ValidateableTextField */ = {
 			isa = PBXGroup;
 			children = (
+				D39BD23D1EA480F400131B46 /* PhoneValidator.swift */,
+				D39BD23E1EA480F400131B46 /* EmailValidator.swift */,
+				D39BD23F1EA480F400131B46 /* Validateable.swift */,
+				D39BD2401EA480F400131B46 /* ValidateableTextField.swift */,
 				D39BD21D1EA4805E00131B46 /* AppDelegate.swift */,
 				D39BD21F1EA4805E00131B46 /* ViewController.swift */,
 				D39BD2211EA4805E00131B46 /* Main.storyboard */,
@@ -202,7 +214,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D39BD2201EA4805E00131B46 /* ViewController.swift in Sources */,
+				D39BD2421EA480F400131B46 /* EmailValidator.swift in Sources */,
 				D39BD21E1EA4805E00131B46 /* AppDelegate.swift in Sources */,
+				D39BD2441EA480F400131B46 /* ValidateableTextField.swift in Sources */,
+				D39BD2411EA480F400131B46 /* PhoneValidator.swift in Sources */,
+				D39BD2431EA480F400131B46 /* Validateable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +430,7 @@
 				D39BD2391EA4805E00131B46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D39BD23A1EA4805E00131B46 /* Build configuration list for PBXNativeTarget "ValidateableTextFieldTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +439,7 @@
 				D39BD23C1EA4805E00131B46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

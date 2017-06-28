@@ -1,5 +1,6 @@
 import UIKit
 
 protocol Validateable {
-    func isValidInput(_ input: UITextField) -> Bool
+    
+    func isValidInput(_ input: String) -> Bool
 }

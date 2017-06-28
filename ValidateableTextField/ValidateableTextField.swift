@@ -1,5 +1,13 @@
 import UIKit
 
+enum DataValidatorError: Error, CustomStringConvertible {
+    
+    case notInitialized
+    var description: String {
+        return "Data validator property was not set in ValidateableTextField"
+    }
+}
+
 class ValidateableTextField: UITextField {
     
     var inputValidator: Validateable?
@@ -8,10 +16,10 @@ class ValidateableTextField: UITextField {
         self.inputValidator = validator
     }
     
-    public func isValidInput()-> Bool {
+    public func isValidInput() throws -> Bool {
         guard let inputValidator = self.inputValidator else {
-            return false
+            throw DataValidatorError.notInitialized
         }
-        return inputValidator.isValidInput(self)
+        return inputValidator.isValidInput(self.text ?? "")
     }
 }
