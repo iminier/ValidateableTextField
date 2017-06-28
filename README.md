@@ -5,7 +5,7 @@ you can choose the type of validation you need.
 
 ## Motivation
 
-I created this as a tool to save me time, keep lean controllers and avoid code duplication when I need data validation in my projects. 
+I created this as a tool to save me time, keep lean controllers and avoid code duplication while working on one of my projects. Hopefully somebody else find it useful.
 
 ## Installation
 
@@ -31,16 +31,23 @@ I created this as a tool to save me time, keep lean controllers and avoid code d
         phoneTextField.keyboardType = .phonePad
 ```
 
-- Validate in textFieldShouldEndEditing.
+- You could validate in the textfield delegate methods like:
 ```swift
 func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+    let validateableTextField =  textField as! ValidateableTextField
 
-        if textField == emailTextField {
-            if !emailTextField.isValidInput() {
-                // if input is not valid handle that case here. In this case we alert the user.
-                invalidEmailAlert(email: emailTextField.text)
+    do {
+        if try !validateableTextField.isValidInput() {
+            if validateableTextField == phoneNumberTextField {
+                print("This is not valid a valid phone number format")
+                invalidEmailAlertView(email: emailTextField.text)
             }
+            return false
+            }
+        } catch {
+            print(error.localizedDescription)
         }
+    return true
 }
 ```
 
@@ -48,11 +55,16 @@ func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
 ```swift
         @IBAction func doneButtonPressed(_ sender: AnyObject) {
 
-            if !emailTextField.isValidInput() {
-                invalidEmailAlert(email: emailTextField.text)
-                return
+            do {
+                if try !validateableTextField.isValidInput() {
+                        invalidEmailAlertView(email: emailTextField.text)
+                        return                    
+                } else {
+                    self.performSegueToReturnBack()
+                }
+            } catch {
+                print(error.localizedDescription)
             }
-            self.performSegueToReturnBack()
         }
 
 ```
