@@ -12,11 +12,11 @@
 		D39BD2231EA4805E00131B46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39BD2211EA4805E00131B46 /* Main.storyboard */; };
 		D39BD2251EA4805E00131B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D39BD2241EA4805E00131B46 /* Assets.xcassets */; };
 		D39BD2281EA4805E00131B46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39BD2261EA4805E00131B46 /* LaunchScreen.storyboard */; };
-		D39BD2331EA4805E00131B46 /* ValidateableTextFieldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39BD2321EA4805E00131B46 /* ValidateableTextFieldTests.swift */; };
 		D39BD2411EA480F400131B46 /* PhoneValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39BD23D1EA480F400131B46 /* PhoneValidator.swift */; };
 		D39BD2421EA480F400131B46 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39BD23E1EA480F400131B46 /* EmailValidator.swift */; };
 		D39BD2431EA480F400131B46 /* Validateable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39BD23F1EA480F400131B46 /* Validateable.swift */; };
 		D39BD2441EA480F400131B46 /* ValidateableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39BD2401EA480F400131B46 /* ValidateableTextField.swift */; };
+		D906B7941F07619900B120A9 /* EmailValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D906B7931F07619900B120A9 /* EmailValidatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +38,12 @@
 		D39BD2271EA4805E00131B46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D39BD2291EA4805E00131B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D39BD22E1EA4805E00131B46 /* ValidateableTextFieldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidateableTextFieldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D39BD2321EA4805E00131B46 /* ValidateableTextFieldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateableTextFieldTests.swift; sourceTree = "<group>"; };
 		D39BD2341EA4805E00131B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D39BD23D1EA480F400131B46 /* PhoneValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneValidator.swift; sourceTree = "<group>"; };
 		D39BD23E1EA480F400131B46 /* EmailValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		D39BD23F1EA480F400131B46 /* Validateable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validateable.swift; sourceTree = "<group>"; };
 		D39BD2401EA480F400131B46 /* ValidateableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateableTextField.swift; sourceTree = "<group>"; };
+		D906B7931F07619900B120A9 /* EmailValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 		D39BD2311EA4805E00131B46 /* ValidateableTextFieldTests */ = {
 			isa = PBXGroup;
 			children = (
-				D39BD2321EA4805E00131B46 /* ValidateableTextFieldTests.swift */,
+				D906B7931F07619900B120A9 /* EmailValidatorTests.swift */,
 				D39BD2341EA4805E00131B46 /* Info.plist */,
 			);
 			path = ValidateableTextFieldTests;
@@ -164,6 +164,7 @@
 					D39BD22D1EA4805E00131B46 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = H53W5ARJ67;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D39BD2191EA4805E00131B46;
 					};
@@ -226,7 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D39BD2331EA4805E00131B46 /* ValidateableTextFieldTests.swift in Sources */,
+				D906B7941F07619900B120A9 /* EmailValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,11 +387,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = H53W5ARJ67;
 				INFOPLIST_FILE = ValidateableTextFieldTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AlbertoVega.ValidateableTextFieldTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ValidateableTextField.app/ValidateableTextField";
 			};
@@ -401,6 +404,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = H53W5ARJ67;
 				INFOPLIST_FILE = ValidateableTextFieldTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
