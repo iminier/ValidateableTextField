@@ -43,7 +43,21 @@ class EmailValidatorTests: XCTestCase {
     }
     
     func testDashForDomain() {
-        let email = "-@-.com"
+        let email = "name@-.com"
+        let result = emailValidatorUT.isValidInput(email)
+        
+        XCTAssertFalse(result)
+    }
+    
+    func testEmailWithoutATSymbol() {
+        let email = "namedomain.com"
+        let result = emailValidatorUT.isValidInput(email)
+        
+        XCTAssertFalse(result)
+    }
+    
+    func testBlankEmail() {
+        let email = ""
         let result = emailValidatorUT.isValidInput(email)
         
         XCTAssertFalse(result)
