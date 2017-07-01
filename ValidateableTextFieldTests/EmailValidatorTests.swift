@@ -11,31 +11,41 @@ import XCTest
 
 class EmailValidatorTests: XCTestCase {
     
-    var emailValidatorVC = EmailValidator()
+    var emailValidatorUT = EmailValidator()
     
     override func setUp() {
         super.setUp()
-        
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
     func testBadEmailGeneric() {
         let email = "-@domain.com"
-        let result = emailValidatorVC.isValidInput(email)
+        let result = emailValidatorUT.isValidInput(email)
         
         XCTAssertFalse(result)
     }
     
     func testGoodEmailGeneric() {
         let email = "email@domain.com"
-        let result = emailValidatorVC.isValidInput(email)
+        let result = emailValidatorUT.isValidInput(email)
         
         XCTAssertTrue(result)
-        
     }
     
+    func testCOdotUKEmail() {
+        let email = "name@domain.co.uk"
+        let result = emailValidatorUT.isValidInput(email)
+        
+        XCTAssertTrue(result)
+    }
+    
+    func testDashForDomain() {
+        let email = "-@-.com"
+        let result = emailValidatorUT.isValidInput(email)
+        
+        XCTAssertFalse(result)
+    }
 }
