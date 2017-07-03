@@ -1,7 +1,7 @@
 ## Synopsis
 
-UITexfield subclass written in Swift that implements data validation. For now you can have a phone validator or an email validator. Using the strategy pattern
-you can choose the type of validation you need.
+UITexfield subclass written in Swift that implements data validation. For now you can have a phone validator or an email validator. Uses the strategy pattern, so
+by choosing the validator class you need you set the validation logic.
 
 ## Motivation
 
@@ -75,9 +75,9 @@ Pending Unit Tests.
 
 ## Contributors
 
-- If you **found a bug**, open an issue.
-- If you **have a feature request**, open an issue.
-- If you **want to contribute**, submit a pull request.
+- If you **found a bug**, please open an issue.
+- If you **have a feature request**, please open an issue.
+- If you **want to contribute**, fork development branch and please submit a pull request for the development branch.
 
 ## License
 
