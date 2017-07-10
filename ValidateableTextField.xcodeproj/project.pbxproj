@@ -17,6 +17,7 @@
 		D39BD2431EA480F400131B46 /* Validateable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39BD23F1EA480F400131B46 /* Validateable.swift */; };
 		D39BD2441EA480F400131B46 /* ValidateableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39BD2401EA480F400131B46 /* ValidateableTextField.swift */; };
 		D906B7941F07619900B120A9 /* EmailValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D906B7931F07619900B120A9 /* EmailValidatorTests.swift */; };
+		D9CD8F771F13249A00CD3BF0 /* PhoneValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CD8F761F13249A00CD3BF0 /* PhoneValidatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		D39BD23F1EA480F400131B46 /* Validateable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validateable.swift; sourceTree = "<group>"; };
 		D39BD2401EA480F400131B46 /* ValidateableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidateableTextField.swift; sourceTree = "<group>"; };
 		D906B7931F07619900B120A9 /* EmailValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailValidatorTests.swift; sourceTree = "<group>"; };
+		D9CD8F761F13249A00CD3BF0 /* PhoneValidatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneValidatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				D906B7931F07619900B120A9 /* EmailValidatorTests.swift */,
+				D9CD8F761F13249A00CD3BF0 /* PhoneValidatorTests.swift */,
 				D39BD2341EA4805E00131B46 /* Info.plist */,
 			);
 			path = ValidateableTextFieldTests;
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D906B7941F07619900B120A9 /* EmailValidatorTests.swift in Sources */,
+				D9CD8F771F13249A00CD3BF0 /* PhoneValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
