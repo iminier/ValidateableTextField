@@ -49,4 +49,40 @@ class PhoneValidatorTests: XCTestCase {
         XCTAssertTrue(result)
     }
     
+    func testInvalidNumberWithCharInPrefixReturnsFalse() {
+        let phoneNum = "(323)g00-6000"
+        let result = phoneValidatorUT.isValidInput(phoneNum)
+        
+        XCTAssertFalse(result)
+    }
+    
+    func testValidPhoneWithCharInSuffixReturnsFalse() {
+        let phoneNum = "(323)600-g000"
+        let result = phoneValidatorUT.isValidInput(phoneNum)
+        
+        XCTAssertFalse(result)
+    }
+    
+    func testInvalidNumWithCharInAreaReturnsFalse() {
+        let phoneNum = "(g23)600-6000"
+        let result = phoneValidatorUT.isValidInput(phoneNum)
+        
+        XCTAssertFalse(result)
+    }
+    
+    //func testInvalidNumWith
+    
 }
+
+
+/*
+ Possible selections
+ 
+ , = pause
+ ; = wait
+ *
+ #
+ +
+ 
+ phoneNumberTextField.keyboardType = UIKeyboardType.phonePad
+ */
