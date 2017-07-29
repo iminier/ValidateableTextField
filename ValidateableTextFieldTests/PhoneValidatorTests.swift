@@ -22,7 +22,7 @@ class PhoneValidatorTests: XCTestCase {
     }
     
     func testValidPhoneNumberReturnsTrue() {
-        let phoneNum = "323-600-6000"
+        let phoneNum = "3236006000"
         let result = phoneValidatorUT.isValidInput(phoneNum)
         
         XCTAssertTrue(result)
@@ -69,9 +69,7 @@ class PhoneValidatorTests: XCTestCase {
         
         XCTAssertFalse(result)
     }
-    
-    //func testInvalidNumWith
-    
+        
 }
 
 
